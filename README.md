@@ -8,6 +8,7 @@
   - [Table of content](#table-of-content)
   - [Notes](#notes)
     - [Chapter 1](#chapter-1)
+    - [Chapter 2](#chapter-2)
 
 ## Notes
 
@@ -27,3 +28,8 @@
 
     > JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file. Although there are other ways to write components, most React developers prefer the conciseness of JSX, and most codebases use it.
 - [React Developer Tools](https://react.dev/learn/react-developer-tools), browser extensions
+
+### Chapter 2
+
+- React component can't return multiple elements, always should encapsulate in only one parrent. Also check `<></>` JSX tag pair and `React.Fragment`.
+- 
