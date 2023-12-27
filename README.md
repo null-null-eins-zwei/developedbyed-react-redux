@@ -14,7 +14,7 @@
 ### Chapter 1
 
 - Install NodeJS: `winget install OpenJS.NodeJS`
-- create-react-app: [https://create-react-app.dev/docs/getting-started](https://create-react-app.dev)
+- [create-react-app.dev](https://create-react-app.dev/docs/getting-started)
 - `npm uninstall -g create-react-app`
 - `npx create-react-app <project-directory>`
 - Install dependencies: `npm install`
@@ -23,6 +23,7 @@
   - `npm run build`
   - `npm run test`
   - `npm run eject`
-- JSX Markup: [https://react.dev/learn/writing-markup-with-jsx](https://react.dev/learn/writing-markup-with-jsx)
+- [JSX Markup](https://react.dev/learn/writing-markup-with-jsx)
 
     > JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file. Although there are other ways to write components, most React developers prefer the conciseness of JSX, and most codebases use it.
+- [React Developer Tools](https://react.dev/learn/react-developer-tools), browser extensions
