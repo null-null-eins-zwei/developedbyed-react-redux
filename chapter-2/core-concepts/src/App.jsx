@@ -10,13 +10,20 @@ function App() {
     "OH NO-NO-NO!"
   ];
 
+  function sayHalloHandler(message){
+    console.log(`Hallo! This is message for you: '${message}'`);
+  }
+
   return (
     <div className="App">
       <h1>Hello React</h1>
+      <button onClick={() => sayHalloHandler(author)}>Hallo</button>
+      
       <CreateTweet />
       <TweetList 
         author = {author}
         messages={messages}/>
+
     </div>
   );
 }
