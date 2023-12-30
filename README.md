@@ -43,4 +43,4 @@
 - [List of React Events](https://flaviocopes.com/react-events/)
 - If we JUST update vatiable in component, it will not re-render. We need to use *state* instead: `import { useState } from "react";`.
 - After `useState` usage component re-renders and variables with default values reset values.
-- 
+- We can not pass state upward (same as for props).

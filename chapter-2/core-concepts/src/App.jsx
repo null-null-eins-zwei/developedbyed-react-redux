@@ -38,7 +38,7 @@ function App() {
       
       <CreateTweet />
       <TweetList 
-        author = {authorWithoutState}
+        author = {author}
         messages={messages}/>
 
     </div>
