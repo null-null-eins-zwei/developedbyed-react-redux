@@ -7,11 +7,8 @@ function App() {
   let authorWithoutState = "Serhii";
   const [author, setAuthor] = useState('Serhii');
 
-  const messages = [
-    "Oh no!",
-    "OH NO!",
-    "OH NO-NO-NO!"
-  ];
+  const [textInput, setTextInput] = useState("");
+  const [tweets, setTweets] = useState([]);
 
   function sayHalloHandler(message){
     console.log(`Hallo! This is message for you: '${message}'`);
@@ -36,10 +33,15 @@ function App() {
       <button onClick={changeAuthorDirectHandler}>Change author name without state</button><br />
       <button onClick={changeAuthorHandler}>Change author name WITH state</button><br />
       
-      <CreateTweet />
+      <CreateTweet
+        textInput = {textInput}
+        setTextInput = {setTextInput}
+        tweets = {tweets}
+        setTweets = {setTweets} />
+
       <TweetList 
         author = {author}
-        messages={messages}/>
+        messages={tweets}/>
 
     </div>
   );
