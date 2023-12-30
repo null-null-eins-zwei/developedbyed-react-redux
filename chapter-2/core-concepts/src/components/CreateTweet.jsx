@@ -1,5 +1,5 @@
 
-const CreateTweet = ({textInput, setTextInput, tweets, setTweets}) => {
+const CreateTweet = ({textInput, setTextInput, allTweets, setTweets}) => {
     // Methods
     const userInputHandler = (e) => {
         console.log(e);
@@ -8,7 +8,7 @@ const CreateTweet = ({textInput, setTextInput, tweets, setTweets}) => {
 
     const submitTweetHandler = (e) => {
         e.preventDefault();
-        setTweets([...tweets, textInput]);
+        setTweets([...allTweets, textInput]);
         setTextInput("");
     }
 

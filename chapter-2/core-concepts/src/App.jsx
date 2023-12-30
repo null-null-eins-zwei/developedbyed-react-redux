@@ -8,7 +8,7 @@ function App() {
   const [author, setAuthor] = useState('Serhii');
 
   const [textInput, setTextInput] = useState("");
-  const [tweets, setTweets] = useState([]);
+  const [allTweets, setTweets] = useState([]);
 
   function sayHalloHandler(message){
     console.log(`Hallo! This is message for you: '${message}'`);
@@ -36,12 +36,13 @@ function App() {
       <CreateTweet
         textInput = {textInput}
         setTextInput = {setTextInput}
-        tweets = {tweets}
+        allTweets = {allTweets}
         setTweets = {setTweets} />
 
       <TweetList 
         author = {author}
-        messages={tweets}/>
+        allTweets = {allTweets}
+        setTweets = {setTweets} />
 
     </div>
   );

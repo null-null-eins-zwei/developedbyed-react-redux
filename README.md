@@ -45,3 +45,10 @@
 - After `useState` usage component re-renders and variables with default values reset values.
 - We can not pass state upward (same as for props).
 - [State Lifting](https://react.dev/learn/sharing-state-between-components)
+- in JSX we use array.map() instead of array.forEach() because .map() returns new array of values - which then actually renders.
+
+  ```JSX
+    messages.map(tweet => {
+                    return <Tweet message={tweet} />
+                })
+  ```
