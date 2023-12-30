@@ -5,15 +5,25 @@ const TweetList = ({author, messages}) => {
         <div className="Tweet-list">
             <Tweet
                 author={author}
+                message={messages.at(-3)}
+            />
+            <Tweet
+                author={author}
+                message={messages.at(-2)}
+            />
+            <Tweet
+                author={author}
+                message={messages.at(-1)}
+            />
+
+            <Tweet
+                author={author}
                 message={messages[0]}
             />
+
             <Tweet
                 author={author}
                 message={messages[1]}
-            />
-            <Tweet
-                author={author}
-                message={messages[2]}
             />
         </div>
     );
