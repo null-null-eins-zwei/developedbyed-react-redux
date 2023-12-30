@@ -34,10 +34,13 @@
 - React component can't return multiple elements, always should encapsulate in only one parrent. Also check `<></>` JSX tag pair and `React.Fragment`.
 - `props` can be passed to component as object, or can be decomposed with object [Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) syntaxis.
 - Props can go down to sub-component, but this is one-way communication
-- To handle events with parameters we need to wrap them into arrow functions:
+- Event handler should be link to function. To handle events with parameters we can to wrap them into arrow functions:
 
   ```HTML
   <button onClick={() => sayHalloHandler(author)}>Hallo</button>
   ```
 
 - [List of React Events](https://flaviocopes.com/react-events/)
+- If we JUST update vatiable in component, it will not re-render. We need to use *state* instead: `import { useState } from "react";`.
+- After `useState` usage component re-renders and variables with default values reset values.
+- 
